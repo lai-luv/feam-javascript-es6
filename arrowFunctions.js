@@ -4,12 +4,14 @@
 
 
 /*Exercise 1*/
-function addTwo(num1, num2){
+function addTwo(num1, num2) {
     return num1 + num2
 }
 //refactor below
 
-
+Two2 = (num3, num4) => {
+    return num3 + num4;
+}
 
 
 
@@ -20,7 +22,9 @@ function templateLiteral(firstName, lastName) {
     return `Hello, ${firstName} ${lastName}! Welcome to the most beautiful site in the world. We hope you learn everything you ever wanted to know and that your life from this day forward will be filled with joy, wonder and adventure. Thank you for stopping by!`
 }
 //refactor below
-
+templateLiteral2 = (firstName2, lastName2) => {
+    return `Hello, ${firstName2} ${lastName2}! Welcome to the most beautiful site in the world. We hope you learn everything you ever wanted to know and that your life from this day forward will be filled with joy, wonder and adventure. Thank you for stopping by!`
+}
 
 
 
@@ -35,7 +39,7 @@ function templateLiteral(firstName, lastName) {
 function hasDuplicates(arr) {
     const numMap = {};
     for (const num of arr) {
-         if (numMap[num]) {
+        if (numMap[num]) {
             return true;
         }
         numMap[num] = true;
@@ -49,7 +53,16 @@ const numbers1 = [1, 2, 3, 4, 5, 6];
 const numbers2 = [1, 2, 3, 4, 2, 6];
 
 //refactor below
-
+hasDuplicates2 = (arr2) => {
+    const numMap2 = {};
+    for (const num5 of arr2) {
+        if (numMap2[num5]) {
+            return true;
+        }
+        numMap2[num5] = true
+    }
+    return false;
+}
 
 
 
